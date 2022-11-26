@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 42.002 s <<< FAILURE! - in TestSuite
+launchBrower(exercise3.info6105RegressionTest)  Time elapsed: 0.227 s  <<< FAILURE!
+java.lang.AssertionError: expected [Login Page] but found [HTTP Status 404 – Not Found]
+	at exercise3.info6105RegressionTest.launchBrower(info6105RegressionTest.java:26)
+
+submit_form(exercise3.info6105RegressionTest)  Time elapsed: 30.089 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#user"}
+  (Session info: chrome=107.0.5304.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'MACHINE-ROG', ip: '192.168.56.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5d28bd93334860c0a3c37c128ac58107, findElement {using=id, value=user}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.121, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:60898}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60898/devtoo..., se:cdpVersion: 107.0.5304.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5d28bd93334860c0a3c37c128ac58107
+	at exercise3.info6105RegressionTest.submit_form(info6105RegressionTest.java:36)
+
